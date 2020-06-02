@@ -10,3 +10,5 @@ the system returns a score for that single player and then terminates. In war mo
 20v20,25v25,30v30,35v35,40v40,45v45,50v50) and then are asked to provide the tags for each team and calculates the score for each player.
 Once all players have been provided it shows the matchups for the war so the person can better determine a war strategy if the war is 
 unbalanced, fair etc.
+
+In order to run the program you must register at https://developer.clashofclans.com/ and then create a key and replace your token where HOME_TOKEN is
