@@ -5,7 +5,7 @@ import sys
 #import requests
 
 #CLASH_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjhmYjRjZDNmLTlmNDktNDM4Ny04OWJlLTgyMzQ4NTc0NjE2MiIsImlhdCI6MTU1ODY0ODY3Niwic3ViIjoiZGV2ZWxvcGVyLzgxNTJlMjYzLTg4ZmQtZDY1Zi05NWI2LWRiNzY0NTgzYTQ5MCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjk4LjE4MC4xNDcuMTUwIl0sInR5cGUiOiJjbGllbnQifV19.ozDaUqoxAwFBBfh5Yl5q5iWJ1LLEymXKfSMiPgKOcz-b9vIcax0VxIYNf8LPCmgr5ho3DLgwPk5cXf9vpfyjoA"
-HOME_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjgxMjViMDM3LTc4Y2MtNGI2MS1hMGExLTdmM2Q3NTc2MzM4ZSIsImlhdCI6MTU4NTk4NTEyOSwic3ViIjoiZGV2ZWxvcGVyLzgxNTJlMjYzLTg4ZmQtZDY1Zi05NWI2LWRiNzY0NTgzYTQ5MCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjE3Mi4yNTEuNTYuMzciXSwidHlwZSI6ImNsaWVudCJ9XX0.5WGtMQ-t9A3-eklu9eMTup7wPmEFTvYNNulgp5BJVgF8bHuXO7H3PaVsMUPRRngHeJtoLcpxfhDsVp2VpZ0g5A'
+HOME_TOKEN = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjM0YzAwZGNkLTE0NWQtNGEyMy04MWNhLTRlNTVkOWViM2UxZiIsImlhdCI6MTYzNzYxMTg5OSwic3ViIjoiZGV2ZWxvcGVyLzgxNTJlMjYzLTg4ZmQtZDY1Zi05NWI2LWRiNzY0NTgzYTQ5MCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjE3Mi4yNTEuNTIuMjE4Il0sInR5cGUiOiJjbGllbnQifV19.T_g32A-wLyoExNRYiHgHI3VdFm6TQWSoJKYfbKFEe4qPKnbvY-8225M_hYyn7GPfThpV8D_pl98MuMOyCl_3dA'
 #CLASH_NAME = "https://api.clashofclans.com/v1/clans/%23QG9C2GR?Authorization=Bearer"+CLASH_TOKEN
 CLASH_NAME="https://api.clashofclans.com/v1"
 HEADER = {'authorization': 'Bearer '+HOME_TOKEN, 'Accept': 'application/json'}
@@ -16,7 +16,7 @@ TROOP_SCORE = {'Barbarian': [0,0,0,0,0,0], 'Archer':[0,0,0,0,0,0], 'Goblin':[0,0
                'Electro Dragon':[-1,-1,-1,3,1,1], 'Stone Slammer':[-1,-1,-1,-1,3,3], 'Siege Barracks':[-1,-1,-1,-1,-1,3], 'Lightning Spell':[1,0,1,0,0,0], 
                'Healing Spell':[4,3,4,1,1,1], 'Rage Spell':[4,4,5,5,5,5], 'Jump Spell':[-1,2,1,1,1,0], 'Freeze Spell':[-1,0,4,3,4,4],
                'Poison Spell':[5,5,3,2,3,3], 'Earthquake Spell':[0,2,0,0,1,1], 'Haste Spell':[-1,2,1,2,1,0], 'Clone Spell':[-1,-1,0,1,0,1],
-               'Skeleton Spell':[-1,1,0,0,0,0], 'Bat Spell':[-1,-1,0,2,0,1]}
+               'Skeleton Spell':[-1,1,0,0,0,0], 'Bat Spell':[-1,-1,0,2,0,1], 'Invisibility Spell': [-1,-1,-1,0,0,0]}
 TH8BASE = 129
 TH9BASE = 192
 TH10BASE = 278
@@ -68,7 +68,7 @@ def count(troops) -> int:
 def build_list(dicts)->list:
     res = []
     for items in dicts:
-        if items['village'] != 'builderBase' and 'Super' not in items['name'] and 'Sneaky' not in items['name']:
+        if items['village'] != 'builderBase' and 'Super' not in items['name'] and 'Sneaky' not in items['name'] and 'Rocket' not in items['name'] and 'Inferno' not in items['name'] and 'Ice' not in items['name']:
             res.append(items)
     return res
 
@@ -83,7 +83,7 @@ def CalcTHScore(troops, heroes, spells,thlevel) -> int:
     return res
 
 def troop_score(troops, heroes, spells, townHallLevel) -> int:
-    if townHallLevel >= 8:
+    if townHallLevel >= 8 and townHallLevel < 14:
         return CalcTHScore(troops, heroes, spells,townHallLevel)
     else:
         print("ERROR Invalid Town Hall Level. This program only works on town halls 8-12 as most clans do not accept sub town hall 8s unless they've know them previously.")
