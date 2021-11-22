@@ -12,3 +12,5 @@ Once all players have been provided it shows the matchups for the war so the per
 unbalanced, fair etc.
 
 In order to run the program you must register at https://developer.clashofclans.com/ and then create a key and replace your token where HOME_TOKEN is
+
+Updated: added invisibility spell. still only up to townhall 13. now ignores new super troops!
